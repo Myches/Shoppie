@@ -13,10 +13,10 @@ export default function Footer () {
                        clothing and potentially other retail products. 
                        The brand focuses on a modern, user-friendly shopping 
                        experience, catering to a wide audience.</p>
-                    <p className="flex items-center bg-white border rounded-lg"><span className="p-2 text-gray-200"><button type="button"  >
+                    <p className="flex items-center bg-white border rounded-lg text-[12px]"><span className="p-2 text-gray-200"><button type="button"  >
                 <BiSearch />
                 </button></span>
-                    <input type="text" placeholder=" Search for Anything" className=" focus:outline-none px-[11px] py-[8px] flex items-center text-black text-16px"/> </p>
+                    <input type="text" placeholder=" Search for Anything" className=" focus:outline-none px-[11px] py-[8px] flex items-center text-black text-[12px]"/> </p>
 
                 </div>
                 

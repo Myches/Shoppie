@@ -45,7 +45,7 @@ export default function Navbar () {
 
         <div className="lg:hidden block h-[140px] text-[16px]  w-full bg-blue-600">
             <div className="flex-col  pt-6">
-                <div className="flex justify-between items-center px-10 md:px-14 pb-3">
+                <div className="flex justify-between items-center px-8 md:px-14  pb-3">
        <div className="" ><p className=""><img src={Shoppie} alt="logo" /></p></div> 
 
         <div className="flex space-x-2 ">
@@ -55,8 +55,8 @@ export default function Navbar () {
        
         </div>
        
-       <div className="flex justify-around items-center px-6 ">
-        <div className="p-2 bg-white  text-[16px] border rounded-lg md:w-3/4 "> 
+       <div className="flex justify-around items-center    ">
+        <div className="p-2 bg-white  text-[12px] border rounded-lg md:w-3/4 "> 
                 <span className="p-2 text-gray-200 "><button type="button"   >
                 <BiSearch />
                 </button></span>
