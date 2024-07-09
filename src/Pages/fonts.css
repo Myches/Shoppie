@@ -1,0 +1,14 @@
+
+@font-face {
+font-family :'Open Sauce One';
+src : url('./assests/open-sauce/openSauceOne-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family :'Open Sauce One';
+    src : url('./assests/open-sauce/openSauceOne-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    }
