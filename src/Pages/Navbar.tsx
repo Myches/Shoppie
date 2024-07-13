@@ -5,11 +5,14 @@ import Profileimg from "/images/Rectangle 201.png"
 import Icon from "/images/Frame 422.png"
 import { BiSearch } from 'react-icons/bi';
 import { Link } from "react-router-dom"
-
-
+import { useCart } from '../Context/cartContext';
+import { FaShoppingCart } from "react-icons/fa"
 
 
 export default function Navbar () {
+
+    const { cart } = useCart();
+    const itemCount = cart.reduce((sum:any, item:any) => sum + item.quantity, 0);
     return (
         <div>
         <div className='hidden lg: block w-full lg:h-[117px] h-[300px] bg-blue-600 lg:flex  lg:items-center sticky border rounded-b-lg '>
@@ -31,7 +34,13 @@ export default function Navbar () {
                 
                     
 
-                    <Link to="/cart"> <li className="text-white">Cart</li> </Link>
+                    <Link to="/cart" className="flex"> <li className="text-white">Cart</li>
+                    <button type="button"   className='flex relative'>
+               
+               <p className='absolute right-4 top-4 border rounded-full bg-black w-[24px] text-[12px] h-[24px] p-[2px] border-none'>{itemCount}</p>
+               <FaShoppingCart  className='text-[35px] text-white border rounded-full p-2 '/>
+             </button>
+                     </Link>
                     <Link to="/checkout"> <li className="text-white">Checkout</li> </Link>
                     
                 
